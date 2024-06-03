@@ -1,0 +1,10 @@
+<h2>Lista de usuarios</h2>
+<mat-divider></mat-divider>
+
+<mat-grid-list cols="3" rowHeight="3:2">
+  @for (usuario of usuarios; track usuario.id) {
+  <mat-grid-tile>
+    <app-usuario [usuario]="usuario"></app-usuario>
+  </mat-grid-tile>
+  }
+</mat-grid-list>

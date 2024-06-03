@@ -1,0 +1,38 @@
+<mat-divider></mat-divider>
+
+<mat-card class="shipping-card">
+  <mat-card-header>
+    <mat-card-title>Editar /agregar Usuario</mat-card-title>
+  </mat-card-header>
+
+  <form [formGroup]="usuarioForm" (ngSubmit)="OnSubmit()">
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput type="text" placeholder="Nombre" required formControlName="name"/>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Nombre de usuario" required  formControlName="username"/>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Correo" required  formControlName="email"/>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+  </form>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="OnSubmit()">Enviar</button> |
+    <button mat-raised-button color="warn" (click)="eliminarUsuario()">Borrar</button>
+  </mat-card-actions>
+</mat-card>

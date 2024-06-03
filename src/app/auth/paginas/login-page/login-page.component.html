@@ -1,0 +1,24 @@
+<div class="d-flex flex-column ">
+  <span class="fs-4">Login</span>
+
+  <div class="d-flex flex-column align-items-center mt-5 ">
+    <mat-form-field>
+        <mat-label>Usuario</mat-label>
+        <input matInput placeholder="Nombre de usuario" #Nombre />
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput placeholder="Contraseña" />
+      </mat-form-field>
+    
+      <button mat-flat-button color="primary" (click)="logIn(Nombre.value)">
+        <mat-icon>login</mat-icon>
+        Ingresar</button>
+  </div>
+
+  <div class="d-flex justify-content-center mt-4">
+    <a mat-button routerLink="/auth/registro" >Crear cuenta!</a>
+  </div>
+  
+</div>
