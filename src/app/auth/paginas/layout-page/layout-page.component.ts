@@ -8,6 +8,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './layout-page.component.html',
   styles: ``
 })
+
 export class LayoutPageComponent {
 
 }

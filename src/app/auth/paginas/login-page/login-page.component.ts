@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 //Modulos de angular material
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -16,10 +16,8 @@ import { AuthService } from '../../services/auth.service';
   styles: ``
 })
 export class LoginPageComponent {
-
-  constructor(private authService: AuthService, private router: Router) {
-    
-  }
+  private authService = inject(AuthService);
+  private router = inject(Router);
 
   logIn(nombre: string): void{
     this.authService.login('abcd', 'abcd').subscribe(res => {

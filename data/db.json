@@ -241,6 +241,12 @@
       "id": "1e60",
       "email": "olivier@mail.com",
       "password": "bestPassw0rd"
+    },
+    {
+      "id": "392b",
+      "name": "test",
+      "username": "test",
+      "email": "test"
     }
   ]
 }
