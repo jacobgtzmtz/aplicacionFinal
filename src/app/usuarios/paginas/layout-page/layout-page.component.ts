@@ -14,19 +14,19 @@ import { ISesion } from '../../../auth/interfaces/isesion';
 
 
 @Component({
-  selector: 'app-layout-page',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    AsyncPipe,],
-  templateUrl: './layout-page.component.html',
-  styles: ``
+    selector: 'app-layout-page',
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatIconModule,
+        AsyncPipe,
+    ],
+    templateUrl: './layout-page.component.html',
+    styles: ``
 })
 export class LayoutPageComponent {
   private breakpointObserver = inject(BreakpointObserver);

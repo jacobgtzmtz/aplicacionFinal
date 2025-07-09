@@ -12,16 +12,15 @@ import { Usuario } from '../../interfaces/iusuario';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-nuevo-usuario-page',
-  standalone: true,
-  imports: [MatDivider, MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
-    ReactiveFormsModule],
-  templateUrl: './nuevo-usuario-page.component.html',
-  styles: ``
+    selector: 'app-nuevo-usuario-page',
+    imports: [MatDivider, MatInputModule,
+        MatButtonModule,
+        MatSelectModule,
+        MatRadioModule,
+        MatCardModule,
+        ReactiveFormsModule],
+    templateUrl: './nuevo-usuario-page.component.html',
+    styles: ``
 })
 export class NuevoUsuarioPageComponent implements OnInit{
 

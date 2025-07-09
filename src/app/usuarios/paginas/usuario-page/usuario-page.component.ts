@@ -9,11 +9,10 @@ import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-usuario-page',
-  standalone: true,
-  imports: [MatProgressSpinnerModule, MatCardModule, MatButtonModule],
-  templateUrl: './usuario-page.component.html',
-  styles: ``
+    selector: 'app-usuario-page',
+    imports: [MatProgressSpinnerModule, MatCardModule, MatButtonModule],
+    templateUrl: './usuario-page.component.html',
+    styles: ``
 })
 
 

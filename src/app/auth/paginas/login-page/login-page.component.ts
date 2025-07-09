@@ -9,11 +9,10 @@ import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
-  selector: 'app-login-page',
-  standalone: true,
-  imports: [RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
-  templateUrl: './login-page.component.html',
-  styles: ``
+    selector: 'app-login-page',
+    imports: [RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
+    templateUrl: './login-page.component.html',
+    styles: ``
 })
 export class LoginPageComponent {
   private authService = inject(AuthService);

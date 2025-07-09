@@ -6,11 +6,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { UsuarioComponent } from '../../components/usuario/usuario.component';
 
 @Component({
-  selector: 'app-usuarios-page',
-  standalone: true,
-  imports: [MatDividerModule, MatGridListModule, UsuarioComponent],
-  templateUrl: './usuarios-page.component.html',
-  styles: ``
+    selector: 'app-usuarios-page',
+    imports: [MatDividerModule, MatGridListModule, UsuarioComponent],
+    templateUrl: './usuarios-page.component.html',
+    styles: ``
 })
 export class UsuariosPageComponent implements OnInit {
 
