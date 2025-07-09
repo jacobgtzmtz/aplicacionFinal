@@ -13,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'app-nuevo-usuario-page',
+    standalone: true,
     imports: [MatDivider, MatInputModule,
         MatButtonModule,
         MatSelectModule,

@@ -15,6 +15,7 @@ import { ISesion } from '../../../auth/interfaces/isesion';
 
 @Component({
     selector: 'app-layout-page',
+    standalone: true,
     imports: [
         RouterOutlet,
         RouterLink,

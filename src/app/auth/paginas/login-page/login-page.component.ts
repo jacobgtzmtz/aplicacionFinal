@@ -10,6 +10,7 @@ import { AuthService } from '../../services/auth.service';
 
 @Component({
     selector: 'app-login-page',
+    standalone: true,
     imports: [RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
     templateUrl: './login-page.component.html',
     styles: ``

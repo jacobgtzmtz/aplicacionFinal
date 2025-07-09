@@ -7,6 +7,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-registro-page',
+    standalone: true,
     imports: [RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
     templateUrl: './registro-page.component.html',
     styles: ``

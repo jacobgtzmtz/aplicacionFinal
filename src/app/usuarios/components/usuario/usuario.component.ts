@@ -8,6 +8,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-usuario',
+    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatIcon],
     templateUrl: './usuario.component.html',
     styles: ``
